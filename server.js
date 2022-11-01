@@ -33,6 +33,7 @@ app.get('/api/notes', (req, res) => res.json(data));
 //You'll need to find a way to give each note a unique id when it's saved 
 //(look into npm packages that could do this for you).
 
+// I think activity 19 would be a good reference for this part 
 app.post('/api/notes', (req, res) => {
     res.json(req.body);
 });
