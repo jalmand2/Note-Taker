@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const api = require('./routes/htmlRoutes.js');
 
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -12,13 +12,13 @@ app.use('/api', api);
 
 app.use(express.static('public'));
 
-//GET request returning the index.html file.
+//GET request returns the index.html file.
 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-//GET /notes should return the notes.html file.
+//GET /notes returns the notes.html file.
 
 app.get('/notes', (req, res) => 
     res.sendFile(path.join(__dirname, '/public/notes.html'))
