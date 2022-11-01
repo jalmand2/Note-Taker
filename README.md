@@ -10,5 +10,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Usage
 
-![alt text](assets/images/screenshot.png)
-[link]
+![Note-Taker Homepage](./images/Note-Taker-HomePage.png)
+![Note-Taker Saved Notes](./images/Note-Taker-Notes-Page.png)
+
+[Note-Taker Deployed Application](https://murmuring-anchorage-44494.herokuapp.com/)
