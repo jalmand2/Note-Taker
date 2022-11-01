@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const data = require('./db/db.json');
 
+
 const PORT = process.env.port || 3000;
 
 const app = express();
@@ -26,7 +27,7 @@ app.get('/notes', (req, res) => {
 });
 
 //GET /api/notes should read the db.json file and return all saved notes as JSON.
-app.get('/api/notes', (req, res) => res.json(data));
+app.get('/notes', (req, res) => res.json(data));
 
 //POST /api/notes should receive a new note to save on the request body, 
 //add it to the db.json file, and then return the new note to the client. 
@@ -34,7 +35,7 @@ app.get('/api/notes', (req, res) => res.json(data));
 //(look into npm packages that could do this for you).
 
 // I think activity 19 would be a good reference for this part 
-app.post('/api/notes', (req, res) => {
+app.post('/notes', (req, res) => {
     res.json(req.body);
 });
 
